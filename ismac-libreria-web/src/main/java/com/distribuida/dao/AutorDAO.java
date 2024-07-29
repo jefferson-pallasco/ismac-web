@@ -4,6 +4,7 @@ package com.distribuida.dao;
 import java.util.List;
 
 import com.distribuida.entities.Autor;
+import com.distribuida.entities.Categoria;
 
 
 public interface AutorDAO {
@@ -18,5 +19,4 @@ public interface AutorDAO {
 
 
 
-	
 }

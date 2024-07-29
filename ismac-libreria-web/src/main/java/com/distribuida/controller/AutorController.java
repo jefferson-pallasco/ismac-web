@@ -1,4 +1,4 @@
-package com.distribuida.controller;
+/*package com.distribuida.controller;
 
 import java.util.List;
 
@@ -105,4 +105,4 @@ public class AutorController {
 	}
 	
 	
-
+*/

@@ -11,6 +11,9 @@
 <body>
  <h1>Clientes</h1>
  
+ 		<button onclick="window.location.href ='/ismac-libreria-web/clientes/findOne?&opcion=1';return false;">
+ 					Agregar
+ 					</button>
  	<table>
  		<thead>
  		<tr>
@@ -21,10 +24,11 @@
  		 		<th>Direccion</th>
  		 		<th>Telefono</th>
  				 <th>Correo</th>
+ 				 <th>Acciones</th>
  		 </tr>
  		 </thead>
  		<tbody>
- 			<c:forEach var="item" items="${ clientes}">
+ 			<c:forEach var="item" items="${clientes}">
  				<tr>
  					<td>${item.idCliente}</td>
  					<td>${item.cedula}</td>
@@ -33,6 +37,17 @@
  					<td>${item.direccion}</td>
  					<td>${item.telefono}</td>
  					<td>${item.correo}</td>
+ 					<td>
+ 					<button onclick="window.location.href ='/ismac-libreria-web/clientes/findOne?idCliente=${item.idCliente}&opcion=1';return false;">
+ 					Actualizar
+ 					</button>
+ 					
+ 					<button onclick="window.location.href ='/ismac-libreria-web/clientes/findOne?idCliente=${item.idCliente}&opcion=2';return false;">
+ 					Eliminar
+ 					
+ 					</button>
+ 					
+ 					</td>
  				</tr>
  			</c:forEach>
  	

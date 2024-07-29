@@ -5,6 +5,7 @@ import java.sql.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -27,6 +28,7 @@ public class LibroController {
 	private LibroDAO libroDAO; 
 	
 	@Autowired
+	@Qualifier("autorDAOImpl3")
 	private AutorDAO autorDAO; 
 	
 	@Autowired
@@ -51,7 +53,7 @@ public class LibroController {
 		 modelMap.addAttribute("libro", libro);
 		}
 		
-		 modelMap.addAttribute("autores", autorDAO.findAll());
+		modelMap.addAttribute("autores", autorDAO.findAll());
 		 modelMap.addAttribute("categorias",categoriaDAO.findAll());
 		 
 		if(opcion ==1 )return"libros-add";
@@ -89,7 +91,7 @@ public class LibroController {
 			Libro libro = new Libro(idLibro,titulo,editorial,numPaginas,edicion,idioma,fechaPublicacion,
 					descripcion,tipoPasta,ISBN,numEjemplares,portada,presentacion,precio);
 			libro.setCategoria(categoriaDAO.findOne(idCategoria));
-			libro.setAutor(autorDAO.findOne(idAutor));
+		libro.setAutor(autorDAO.findOne(idAutor));
 			
 			libroDAO.up(libro);
 		}
