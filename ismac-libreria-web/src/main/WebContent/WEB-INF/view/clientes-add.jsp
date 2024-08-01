@@ -16,25 +16,25 @@
  	<form action="add" method="post">
  	
  	<input type="hidden"  id="idCliente" name= "idCliente" value="${cliente.idClientes}"/> 
- 	<br>
+ 	<br/>
  		cedula
  	<input type="hidden"  id="cedula" name= "cedula" value="${cliente.cedula}"/> 
- 	<br>
+ 	<br/>
  		Nombre
  	<input type="hidden"  id="nombre" name= "nombre" value="${cliente.nombre}"/> 
- 	<br>
+ 	<br/>
  		Apellido
  	<input type="hidden"  id="apellido" name= "apellido" value="${cliente.apellido}"/> 
- 	<br>
+ 	<br/>
  		Direccion
  	<input type="hidden"  id="direccion" name= "direccion" value="${cliente.direccion}"/>
- 	<br>
+ 	<br/>
  		Telefono 
  	<input type="hidden"  id="telefono" name= "telefono" value="${cliente.telefono}"/> 
- 	<br>
+ 	<br/>
  		Correo
  	<input type="email"  id="correo" name= "correo" value="${cliente.correo}"/> 
- 	<br>
+ 	<br/>
  	
  	<button type="submit">Guardar</button>
  
@@ -44,4 +44,4 @@
  	</form>
  
  </body>
-</html>
+</html>  

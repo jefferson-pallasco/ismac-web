@@ -25,13 +25,13 @@ public class CategoriaController {
 	private CategoriaDAO categoriaDAO;
 	
 	// Path Secundario
-	@GetMapping("/findALL") 
-	public String findALL(Model model){
+	@GetMapping("/findAll") 
+	public String findAll(Model model){
 		
 		//try {
  List<Categoria> categorias = categoriaDAO.findAll();
 		
-		model.addAttribute("keyCategoria", categorias);
+		model.addAttribute("categorias", categorias);
 		 // Nombre del Formulario Web EJ: categorias-listar o "categorias-listar.html" 
 		return "categorias-listar"; 
 	
@@ -66,11 +66,12 @@ public class CategoriaController {
 			, Model model
 			
 	
-			){
+			)
+	{
 		
 //try {
 	
-	/*	if(idCategoria == null){
+		if(idCategoria == null){
 			Categoria categoria = new Categoria(0,categoria,descripcion);
 			categoriaDAO.add(categoria);
 			
@@ -78,7 +79,7 @@ public class CategoriaController {
 			Categoria categoria= new Categoria(idCategoria,categoria,descripcion);
 			categoriaDAO.up(categoria);
 
-		*/
+		
 		
 	return "redirect:/categorias/findAll";
 	// catch (Exception e) {

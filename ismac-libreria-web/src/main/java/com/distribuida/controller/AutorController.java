@@ -25,13 +25,13 @@ public class AutorController {
 	private AutorDAO autorDAO;
 	
 	// Path Secundario
-	@GetMapping("/findALL") 
-	public String findALL(Model model){
+	@GetMapping("/findAll") 
+	public String findAll(Model model){
 		
 		//try {
  List<Autor> autores = autorDAO.findAll();
 		
-		model.addAttribute("keyAutor", autores);
+		model.addAttribute("autores", autores);
 		 // Nombre del Formulario Web EJ: autores-listar o "autores-listar.html" 
 		return "autores-listar"; 
 	
@@ -61,22 +61,22 @@ public class AutorController {
 		
 	@PostMapping ("/add")
 	public String add(@RequestParam("idAutor")@Nullable Integer idAutor 
-			,@RequestParam("apellido")@Nullable String apellido
-			,@RequestParam("correo")@Nullable String correo
-			,@RequestParam("direccion")@Nullable String direccion
 			,@RequestParam("nombre")@Nullable String nombre
+			,@RequestParam("apellido")@Nullable String apellido
 			,@RequestParam("pais")@Nullable String pais
+			,@RequestParam("direccion")@Nullable String direccion
 			,@RequestParam("telefono")@Nullable String telefono
+			,@RequestParam("correo")@Nullable String correo
 			, Model model
 			
 			){
 //try {
 		if(idAutor == null){
-			Autor autor = new Autor(0,apellido,correo,direccion,nombre,pais,telefono);
+			Autor autor = new Autor(0,nombre,apellido,pais,direccion,telefono,correo);
 			autorDAO.add(autor);
 			
 		}else {
-			Autor autor = new Autor(idAutor,apellido,correo,direccion,nombre,pais,telefono);
+			Autor autor = new Autor(idAutor,nombre,apellido,pais,direccion,telefono,correo);
 			autorDAO.up(autor);
 			
 		}
