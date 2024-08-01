@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.distribuida.entities.Facturadetalle;
 
-@Repository
+
 public interface FacturadetalleDAO {
 
 

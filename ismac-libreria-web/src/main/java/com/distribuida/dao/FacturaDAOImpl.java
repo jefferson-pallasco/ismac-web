@@ -58,7 +58,8 @@ public class FacturaDAOImpl implements FacturaDAO {
 		// TODO Auto-generated method stub
 
 	}
-
+	
+	@Override
 	@Transactional
 	public void del(int id) {
 		Session session=sessionFactory.getCurrentSession();

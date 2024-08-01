@@ -2,10 +2,8 @@ package com.distribuida.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.distribuida.entities.Factura;
-@Repository
+
 public interface FacturaDAO {
 
 	public List<Factura>findAll();

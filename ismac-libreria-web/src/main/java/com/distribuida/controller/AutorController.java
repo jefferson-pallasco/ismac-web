@@ -1,4 +1,4 @@
-/*package com.distribuida.controller;
+package com.distribuida.controller;
 
 import java.util.List;
 
@@ -17,11 +17,11 @@ import com.distribuida.entities.Autor;
 
 
 @Controller
-@RequestMapping("/clientes") //son las URL Path Principal
+@RequestMapping("/autores") //son las URL Path Principal
 public class AutorController {
 	
 	@Autowired
-	@Qualifier("autorDAOImpl")
+	@Qualifier("autorDAOImpl3")
 	private AutorDAO autorDAO;
 	
 	// Path Secundario
@@ -105,4 +105,4 @@ public class AutorController {
 	}
 	
 	
-*/
+

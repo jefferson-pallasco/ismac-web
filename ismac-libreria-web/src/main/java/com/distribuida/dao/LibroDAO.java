@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.distribuida.entities.Libro;
-@Repository
+
 public interface LibroDAO {
 
 	public List<Libro>findAll();

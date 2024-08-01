@@ -2,19 +2,18 @@ package com.distribuida.dao;
 
 import java.util.List;
 
+
 import javax.transaction.Transactional;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import com.distribuida.entities.Cliente;
- import org.hibernate.query.Query;
 
-@SuppressWarnings("unused")
 @Repository
 public class ClienteDAOImpl implements ClienteDAO {
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 
@@ -54,11 +53,6 @@ public class ClienteDAOImpl implements ClienteDAO {
 		Session session =sessionFactory.getCurrentSession();
 		session.delete(findOne(id));
 	}
-	@Override
-	@Transactional
-	public List<Cliente> fidAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 }

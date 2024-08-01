@@ -54,12 +54,7 @@ public class CategoriaDAOImpl implements CategoriaDAO{
 		Session session =sessionFactory.getCurrentSession();
 		session.delete(findOne(id));
 	}
-	@Override
-	@Transactional
-	public List<Categoria> fidAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 
 }

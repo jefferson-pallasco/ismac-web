@@ -2,6 +2,7 @@ package com.distribuida.controller;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
@@ -23,13 +24,13 @@ public class ClienteController {
 	private ClienteDAO clienteDAO;
 	
 	// Path Secundario
-	@GetMapping("/findALL") 
-	public String findALL(Model model){
+	@GetMapping("/findAll") 
+	public String findAll(Model model){
 		
 		//try {
 List<Cliente> clientes = clienteDAO.findAll();
 		
-		model.addAttribute("keyClientes", clientes);
+		model.addAttribute("clientes", clientes);
 		 // Nombre del Formulario Web EJ: clientes-listar o "clientes-listar.html" 
 		return "clientes-listar"; 
 	
