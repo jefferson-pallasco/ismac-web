@@ -59,7 +59,7 @@ public class CategoriaController {
 	//}
 	}
 		
-	@PostMapping ("/add")
+	@PostMapping("/add")
 	public String add(@RequestParam("idCategoria")@Nullable Integer idCategoria 
 			,@RequestParam("categoria")@Nullable String categoria
 			,@RequestParam("descripcion")@Nullable String descripcion
@@ -72,15 +72,15 @@ public class CategoriaController {
 //try {
 	
 		if(idCategoria == null){
-			Categoria categoria = new Categoria(0,categoria,descripcion);
-			categoriaDAO.add(categoria);
+			Categoria categoria1 = new Categoria(0,categoria,descripcion);
+			categoriaDAO.add(categoria1);
 			
 		}else {
-			Categoria categoria= new Categoria(idCategoria,categoria,descripcion);
-			categoriaDAO.up(categoria);
+			Categoria categoria2= new Categoria(idCategoria,categoria,descripcion);
+			categoriaDAO.up(categoria2);
 
 		
-		
+		}
 	return "redirect:/categorias/findAll";
 	// catch (Exception e) {
 			// TODO: handle exception

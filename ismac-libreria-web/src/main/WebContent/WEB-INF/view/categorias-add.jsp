@@ -1,20 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body><%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
     
   <!-- <%@taglib uri ="http://java.sun.com/jsp/jstl/core" prefix="c" %>   --> 
-  
 <!DOCTYPE html>
 <html>
+<body>
 <head>
 <meta charset="ISO-8859-1">
 <title>Add Categorias</title>
@@ -25,14 +15,14 @@
  
  	<form action="add" method="post">
  	
- 	<input type="hidden"  id="idCategoria" name= "idCategoria" value="${categoria.idCategorias}"/> 
- 	<br/>
+ 	<input type="hidden"  id="idCategoria" name= "idCategoria" value="${categoria.idCategorias}"/>  <br/>
+ 	
  		Categoria
- 	<input type="hidden"  id="categoria" name= "categoria" value="${categoria.categoria}"/> 
- 	<br/>
+ 	<input type="hidden"  id="categoria" name= "categoria" value="${categoria.categoria}"/> <br/>
+ 	
  	 Descripcion
- 	<input type="hidden"  id="descripcion" name= "descripcion" value="${categoria.descripcion}"/> 
- 	<br/>
+ 	<input type="hidden"  id="descripcion" name= "descripcion" value="${categoria.descripcion}"/> <br/>
+ 	
  
  	
  	<button type="submit">Guardar</button>

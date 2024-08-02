@@ -9,7 +9,7 @@
 <title>Categorias</title>
 </head>
 <body>
- <h1>Categoias</h1>
+ <h1>Categorias</h1>
  
  		<button onclick="window.location.href ='/ismac-libreria-web/categorias/findOne?&opcion=1';return false;">
  					Agregar
