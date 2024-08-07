@@ -16,21 +16,20 @@
  	<form action="add" method="post">
  	
  	<input type="hidden"  id="idAutor" name= "idAutor" value="${autor.idAutores}"/> 
- 	<br/>
  		Nombre
- 	<input type="hidden"  id="nombre" name= "cedula" value="${autor.nombre}"/> 
+ 	<input type="text"  id="nombre" name= "cedula" value="${autor.nombre}"/> 
  	<br/>
  		Apellido
- 	<input type="hidden"  id="apellido" name= "nombre" value="${autor.apellido}"/> 
+ 	<input type="text"  id="apellido" name= "nombre" value="${autor.apellido}"/> 
  	<br/>
  		Pais
- 	<input type="hidden"  id="pais" name= "apellido" value="${autor.pais}"/> 
+ 	<input type="text"  id="pais" name= "apellido" value="${autor.pais}"/> 
  	<br/>
  		Direccion
- 	<input type="hidden"  id="direccion" name= "direccion" value="${autor.direccion}"/>
+ 	<input type="text"  id="direccion" name= "direccion" value="${autor.direccion}"/>
  	<br/>
  		Telefono 
- 	<input type="hidden"  id="telefono" name= "telefono" value="${autor.telefono}"/> 
+ 	<input type="text"  id="telefono" name= "telefono" value="${autor.telefono}"/> 
  	<br/>
  		Correo
  	<input type="email"  id="correo" name= "correo" value="${autor.correo}"/> 

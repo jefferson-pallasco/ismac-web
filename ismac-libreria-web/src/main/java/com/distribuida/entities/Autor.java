@@ -1,3 +1,4 @@
+
 package com.distribuida.entities;
 
 import javax.persistence.Column;

@@ -18,10 +18,10 @@
  	<input type="hidden"  id="idCategoria" name= "idCategoria" value="${categoria.idCategorias}"/>  <br/>
  	
  		Categoria
- 	<input type="hidden"  id="categoria" name= "categoria" value="${categoria.categoria}"/> <br/>
+ 	<input type="text"  id="categoria" name= "categoria" value="${categoria.categoria}"/> <br/>
  	
  	 Descripcion
- 	<input type="hidden"  id="descripcion" name= "descripcion" value="${categoria.descripcion}"/> <br/>
+ 	<input type="text"  id="descripcion" name= "descripcion" value="${categoria.descripcion}"/> <br/>
  	
  
  	
@@ -34,4 +34,3 @@
  
  </body>
 </html>  
-</html>

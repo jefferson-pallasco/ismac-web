@@ -6,6 +6,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
 <meta charset="ISO-8859-1">
 <title>Add Clientes</title>
 </head>
@@ -18,19 +20,19 @@
  	<input type="hidden"  id="idCliente" name= "idCliente" value="${cliente.idClientes}"/> 
  	<br/>
  		cedula
- 	<input type="hidden"  id="cedula" name= "cedula" value="${cliente.cedula}"/> 
+ 	<input type="text"  id="cedula" name= "cedula" value="${cliente.cedula}"/> 
  	<br/>
  		Nombre
- 	<input type="hidden"  id="nombre" name= "nombre" value="${cliente.nombre}"/> 
+ 	<input type="text"  id="nombre" name= "nombre" value="${cliente.nombre}"/> 
  	<br/>
  		Apellido
- 	<input type="hidden"  id="apellido" name= "apellido" value="${cliente.apellido}"/> 
+ 	<input type="text"  id="apellido" name= "apellido" value="${cliente.apellido}"/> 
  	<br/>
  		Direccion
- 	<input type="hidden"  id="direccion" name= "direccion" value="${cliente.direccion}"/>
+ 	<input type="text"  id="direccion" name= "direccion" value="${cliente.direccion}"/>
  	<br/>
  		Telefono 
- 	<input type="hidden"  id="telefono" name= "telefono" value="${cliente.telefono}"/> 
+ 	<input type="text"  id="telefono" name= "telefono" value="${cliente.telefono}"/> 
  	<br/>
  		Correo
  	<input type="email"  id="correo" name= "correo" value="${cliente.correo}"/> 
