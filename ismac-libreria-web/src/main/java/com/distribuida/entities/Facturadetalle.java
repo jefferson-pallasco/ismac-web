@@ -17,16 +17,14 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name= "factura_detalle")
 public class Facturadetalle {
-	//@OneToOne
-			//@ManyToOne
-			//@OneToMany
+	
 			@Id
 			@GeneratedValue(strategy =  GenerationType.IDENTITY)
 	@Column(name ="id_factura_detalle")
 	private int idfacturadetalle;
-			@Column(name="cantidad")
+	@Column(name="cantidad")
 	private int cantidad;
-		@Column(name="subtotal")
+	@Column(name="subtotal")
 	private Double subtotal;
 		//@Column(name="factura")
 	//private Factura factura;

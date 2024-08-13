@@ -45,7 +45,7 @@ public class LibroController {
 	
 	@GetMapping("/findOne")
 	public String findOne (@RequestParam("idLibro") @Nullable Integer idLibro
-			, @RequestParam("opcion")@Nullable Integer opcion 
+						, @RequestParam("opcion")@Nullable Integer opcion 
 			,ModelMap modelMap
 			) {
 		if (idLibro !=null) {
