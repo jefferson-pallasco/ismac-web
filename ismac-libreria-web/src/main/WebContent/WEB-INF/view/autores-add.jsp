@@ -17,13 +17,13 @@
  	
  	<input type="hidden"  id="idAutor" name= "idAutor" value="${autor.idAutores}"/> 
  		Nombre
- 	<input type="text"  id="nombre" name= "cedula" value="${autor.nombre}"/> 
+ 	<input type="text"  id="nombre" name= "nombre" value="${autor.nombre}"/> 
  	<br/>
  		Apellido
- 	<input type="text"  id="apellido" name= "nombre" value="${autor.apellido}"/> 
+ 	<input type="text"  id="apellido" name= "apellido" value="${autor.apellido}"/> 
  	<br/>
  		Pais
- 	<input type="text"  id="pais" name= "apellido" value="${autor.pais}"/> 
+ 	<input type="text"  id="pais" name= "pais" value="${autor.pais}"/> 
  	<br/>
  		Direccion
  	<input type="text"  id="direccion" name= "direccion" value="${autor.direccion}"/>
