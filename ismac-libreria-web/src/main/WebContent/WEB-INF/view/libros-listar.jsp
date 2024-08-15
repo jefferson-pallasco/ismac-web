@@ -45,18 +45,18 @@
  				<td>${item.numPaginas}</td>
  				<td>${item.edicion}</td>
  				<td>${item.idioma}</td>
- 				<td>${item.fechaPublicacion}</td>
+ 				<td>${fn:substring(item.fechaPublicacion,0,10)}</td>
  				<td>${item.descripcion}</td>
  				<td>${item.tipoPasta}</td>
  				<td>${item.ISBN}</td>
  				<td>${item.numEjemplares}</td>
- 				<td>${item.portada}</td>
- 				<td>${item.presentacion}</td>
- 				<td>${item.portada}</td>
+ 				<td>
+ 					<img alt="Portada"  height="100" width="100" src="${pageContext.request.contextPath}/resources/img/${item.portada}">
+ 					${item.portada}</td>
  				<td>${item.presentacion}</td>
  				<td>${item.precio}</td>
- 				<td>${item.categoria}</td>
- 				<td>${item.autor}</td>
+ 				<td>${item.categoria.categoria}</td>
+ 				<td>${item.autor.nombre} ${item.autor.apellido}</td>
  				<td>
  				<button>Actualizar</button>
  				<button>Borrar</button>
