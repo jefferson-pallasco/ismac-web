@@ -12,6 +12,10 @@
 <body>
  <h1> LIBROS</h1>
 
+	<button onclick="window.location.href='/ismac-libreria-web/libros2/findOne?opcion=1'; return false ;"> Agregar
+	
+</button>
+
  	<table>
  		<thead>
  			<tr>
@@ -58,8 +62,14 @@
  				<td>${item.categoria.categoria}</td>
  				<td>${item.autor.nombre} ${item.autor.apellido}</td>
  				<td>
- 				<button>Actualizar</button>
- 				<button>Borrar</button>
+ 				<button onclick ="window.location.href='/ismac-libreria-web/libros2/findOne?idLibro=${item.idLibro}&opcion=1'; return false ;"> Actualizar
+	
+				</button>
+				
+ 				<button onclick ="window.location.href='/ismac-libreria-web/libros2/findOne?idLibro=${item.idLibro}&opcion=2'; return false ;"> Eliminar
+				</button>
+
+ 
  				</td>
  				
  			</tr>

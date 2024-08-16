@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@taglib uri ="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,20 +54,27 @@
 		<br/>
 		Categoria
 		<select id="idCategoria" name="idCategoria">
-		<option value="1"> 1 </option>
-			<option value="2"> 2 </option>
-				<option value="3"> 3 </option>
-		
+		<c:forEach var="item" items="${categorias}">
+		<option value="${item.idCategoria}">
+		</c:forEach>
 		</select>
+		<br/>
+			Autor
+		<select id="idAutor" name="idAutor">
+		<c:forEach var="item" items="${autores}">
+		<option value="${item.idAutor}"> ${item.nombre}.${item.apellido}
+		</c:forEach>
+		</select>
+		
 <br/>
-Categoria
+		Categoria
 		<select id="idAutor" name="idAutor">
 		<option value="4"> 4 </option>
 			<option value="5"> 5 </option>
 				<option value="6"> 6 </option>
 		
 		</select>
-Autor
+		Autor
 
 	</form>
 </body>
