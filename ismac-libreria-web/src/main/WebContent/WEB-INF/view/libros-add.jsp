@@ -20,7 +20,7 @@
 		<input type="text" id="editorial" name="editorial" value="${libro.editorial }" />
 		<br/>
 		Numero de Paginas	
-		<input type="number" id="numeroPaginas" name="numeroPaginas" value="${libro.numeroPaginas }" />
+		<input type="number" id="numPaginas" name="numPaginas" value="${libro.numPaginas }" />
 		<br/>
 		Edicion
 		<input type="text" id="edicion" name="edicion" value="${libro.edicion }" />
@@ -29,7 +29,7 @@
 		<input type="text" id="idioma" name="idioma" value="${libro.idioma }" />
 		<br/>
 		Fecha de Publicacion
-		<input type="date" id="fechaPublicacion" name="fechaPublicacion" value="${libro.fechaPublicacion }" />
+		<input type="date" id="fechaPublicacion" name="fechaPublicacion" value="${fn:substring(libro.fechaPublicacion,0,10) }" />
 		<br/>
 		Descripcion
 		<input type="text" id="descripcion" name="descripcion" value="${libro.descripcion }" />
@@ -55,14 +55,14 @@
 		Categoria
 		<select id="idCategoria" name="idCategoria">
 		<c:forEach var="item" items="${categorias}">
-		<option value="${item.idCategoria}">
+		<option value="${item.idCategoria}" ${item.idCategoria==libro.categoria.idCategoria ? 'selected' : ''}> ${item.categoria}</option>
 		</c:forEach>
 		</select>
 		<br/>
 			Autor
 		<select id="idAutor" name="idAutor">
 		<c:forEach var="item" items="${autores}">
-		<option value="${item.idAutor}"> ${item.nombre}.${item.apellido}
+		<option value="${item.idAutor}" ${item.idAutor ==libro.autor.idAutor  ? 'selected' : '' }> ${item.nombre}.${item.apellido}</option>
 		</c:forEach>
 		</select>
 		
@@ -74,7 +74,9 @@
 				<option value="6"> 6 </option>
 		
 		</select>
-		Autor
+	<br/>
+	<button type ="submit">Guardar</button>
+	<button onclick="window.location.href ='/recursosh-web/libros2/findAll';return false;">Eliminar</button>
 
 	</form>
 </body>
