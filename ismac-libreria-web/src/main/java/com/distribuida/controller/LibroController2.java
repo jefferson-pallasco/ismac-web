@@ -44,6 +44,7 @@ public class LibroController2 {
 		return"libros-listar";
 		
 		
+		
 
 		
 	}
@@ -85,7 +86,7 @@ public class LibroController2 {
 						){
 							if(idLibro ==null) {
 								Libro libro =new Libro(0,titulo,editorial,numPaginas,edicion,idioma,fechaPublicacion,descripcion
-										,tipoPasta,ISBN,numEjemplares,portada,presentacion,precio);
+													,tipoPasta,ISBN,numEjemplares,portada,presentacion,precio);
 								libro.setCategoria(categoriaDAO.findOne(idCategoria));
 								libro.setAutor(autorDAO.findOne(idAutor));
 								
