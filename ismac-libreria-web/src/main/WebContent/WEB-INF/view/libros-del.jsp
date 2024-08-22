@@ -8,6 +8,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>ELIMINAR AUTORES</title>
+
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resourses/css/estilos.css"/>
 </head>
 <body>
  <h1>Eliminar Autoress</h1>
