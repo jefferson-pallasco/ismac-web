@@ -8,17 +8,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>SISTEMA LIBRERIA</title>
-<%-- <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/estilos.css"/>--%>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/estilos.css"/>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-table.min.css"/>
+â€ƒ<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <nav></nav>
 <section class="px-5 py-5">
  <h1> LIBROS</h1>
 <div class="container" style="text-align: center;">
-	<button class="btn btn-primary" onclick="window.location.href='/ismac-libreria-web/libros2/findOne?opcion=1'; return false ;"> Agregar
-	
+	<button class="btn btn-primary" onclick="window.location.href='/ismac-libreria-web/libros2/findOne?opcion=1'; return false ;"> 
+<i class="fa-solid fa-book"></i>
 </button>
 </div>
 <div class="table-responsive">
@@ -36,14 +37,14 @@
 				<th data-field="Id Libro" data-sortable="true" > idLibro</th>
 				<th data-field="TITULO" data-sortable="true"> titulo</th>
 				<th data-field="EDITORIAL" data-sortable="true"> editorial</th>
-				<th data-field="N° PAGINAS" data-sortable="true"> numPaginas</th>
-				<th data-field="N° EDICION" data-sortable="true"> edicion</th>
+				<th data-field="NÂ° PAGINAS" data-sortable="true"> numPaginas</th>
+				<th data-field="NÂ° EDICION" data-sortable="true"> edicion</th>
 				<th data-field="IDIOMA" data-sortable="true"> idioma</th>
 				<th data-field="F-PUBLICACION" data-sortable="true"> fechaPublicacion</th>
 				<th data-field="DESCRIPCION" data-sortable="true"> descripcion</th>
 				<th data-field="TIPO-PASTA" data-sortable="true"> tipoPasta</th>
 				<th data-field="ISBN" data-sortable="true"> iSBN</th>
-				<th data-field="N° EJEMPLARES" data-sortable="true"> numEjemplares</th>
+				<th data-field="NÂ° EJEMPLARES" data-sortable="true"> numEjemplares</th>
 				<th data-field="PORTADA" data-sortable="true"> portada </th>
 				<th data-field="PRESENTACION" data-sortable="true"> presentacion</th>
 				<th data-field="PRECIO $" data-sortable="true"> precio</th>
@@ -76,11 +77,13 @@
  				<td>${item.categoria.categoria}</td>
  				<td>${item.autor.nombre} ${item.autor.apellido}</td>
  				<td>
- 				<button  class="btn btn-success" onclick ="window.location.href='/ismac-libreria-web/libros2/findOne?idLibro=${item.idLibro}&opcion=1'; return false ;"> Actualizar
+ 				<button  class="btn btn-success" onclick ="window.location.href='/ismac-libreria-web/libros2/findOne?idLibro=${item.idLibro}&opcion=1'; return false ;"> 
+ 				<i class="fa-solid fa-arrows-rotate"></i>
 	
 				</button>
 				
- 				<button class="btn btn-danger" onclick ="window.location.href='/ismac-libreria-web/libros2/findOne?idLibro=${item.idLibro}&opcion=2'; return false ;"> Eliminar
+ 				<button class="btn btn-danger" onclick ="window.location.href='/ismac-libreria-web/libros2/findOne?idLibro=${item.idLibro}&opcion=2'; return false ;">
+ 				<i class="fa-solid fa-trash"></i>
 				</button>
  				</td>
  				

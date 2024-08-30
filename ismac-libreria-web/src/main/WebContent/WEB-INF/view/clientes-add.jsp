@@ -17,7 +17,7 @@
  
  	<form action="add" method="post">
  	
- 	<input type="hidden"  id="idCliente" name= "idCliente" value="${cliente.idClientes}"/> 
+ 	<input type="hidden"  id="idCliente" name= "idCliente" value="${cliente.idCliente}"/> 
  	<br/>
  		cedula
  	<input type="text"  id="cedula" name= "cedula" value="${cliente.cedula}"/> 

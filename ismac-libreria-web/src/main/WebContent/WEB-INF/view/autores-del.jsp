@@ -14,7 +14,7 @@
  
  	<form action="del" method="get">
  	
- 	<input type="hidden"  id="idAutor" name= "idAutor" value="${autor.idAutores}"/> 
+ 	<input type="hidden"  id="idAutor" name= "idAutor" value="${autor.idAutore}"/> 
 	<strong>¿Desea Eliminar el Dato?</strong>
 	<br>
 	<button type="submit">Aceptar</button>
